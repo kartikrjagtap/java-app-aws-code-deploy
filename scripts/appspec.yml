@@ -1,0 +1,17 @@
+version: 0.0
+
+os: linux
+
+files:
+  - source: /.jar
+    destination: /tmp
+
+hooks:
+  ApplicationStop:
+    - location: stop-app.sh
+      timeout: 180
+      runas: root
+  ApplicationStart:
+    - location: start-app.sh
+      timeout: 180
+      runas: root
