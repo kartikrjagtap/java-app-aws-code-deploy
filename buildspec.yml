@@ -3,7 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-       - cd test/
+       - cd ./test/
        - mvn clean package
 artifacts:
   files:
