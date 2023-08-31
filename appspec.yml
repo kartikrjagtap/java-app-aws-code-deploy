@@ -14,10 +14,10 @@ files:
 
 hooks:
   ApplicationStop:
-    - location: ./scripts/stop-app.sh
+    - location: /tmp/stop-app.sh
       timeout: 180
       runas: root
   ApplicationStart:
-    - location: ./scripts/start-app.sh
+    - location: /tmp/start-app.sh
       timeout: 180
       runas: root
