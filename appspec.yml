@@ -6,6 +6,12 @@ files:
   - source: test/target/regioncheck-0.0.1-SNAPSHOT.jar
     destination: /tmp
 
+  - source: scripts/stop-app.sh
+    destination: /tmp
+
+  - source: scripts/start-app.sh
+    destination: /tmp
+
 hooks:
   ApplicationStop:
     - location: ./scripts/stop-app.sh
